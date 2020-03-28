@@ -1,4 +1,4 @@
-class Canvas:
+class CanvasWithShapes:
     height = 10
     width = 10
 
@@ -37,25 +37,30 @@ class Shape:
         # line9 = "8          "
         # line10 = "9          "
 
-        canvas_with_shape = [" 0123456789",
-                            "0          ",
-                            "1          ",
-                            "2          ",
-                            "3          ",
-                            "4          ",
-                            "5          ",
-                            "6          ",
-                            "7          ",
-                            "8          ",
-                            "9          "]
+        canvas_with_shape = [
+                                "          ",
+                                "          ",
+                                "          ",
+                                "          ",
+                                "          ",
+                                "          ",
+                                "          ",
+                                "          ",
+                                "          ",
+                                "          ",]
 
         height = self.end_y - self.start_y + 1
         width = self.end_x - self.start_x + 1
 
+        print(canvas_with_shape[self.end_y][self.start_x:(self.end_x+1)])
+
+
+        # print(canvas_with_shape)
+
 
     def translate(self, axis, num):
         # add num numbers to the values of axis axis and re-render canvas with shape.
-        
+        pass
 
         
 
